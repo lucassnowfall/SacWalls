@@ -2,8 +2,30 @@
 font-family: 'Pacifico', cursive;
 font-family: 'Sacramento', cursive;
 font-family: 'Roboto', sans-serif; */
+
+/* HTML TAGS */
 body {
   margin: 0;
+}
+
+h1{
+  font-size: 8rem;
+  font-family: 'Pacifico', cursive;
+  color: #ffebb7;
+  line-height: 1.5;
+}
+h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: #fffeec;
+}
+
+h3{
+  font-family: 'Roboto',sans-serif;
+  color: #fffeec;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 /* NAVBAR */
@@ -18,7 +40,7 @@ body {
 }
 
 .nav-item{
-  padding: 0 3%;
+  padding: 0 5%;
   font-size: 1.2rem;
 }
 
@@ -43,21 +65,11 @@ body {
   top: 50%;
 }
 
-h1{
-  font-size: 8rem;
-  font-family: 'Pacifico', cursive;
-  color: #ffebb7;
-  line-height: 1.5;
-}
-h2{
-  font-size: 2.5rem;
-  font-weight: bold;
-  font-family: 'Roboto',sans-serif;
-  color: #fffeec;
-}
+/* CAROUSEL */
 
 .carousel-inner{
   background-color: #343A40;
+  padding: 5% 0;
 }
 
 .mural-img{
@@ -67,4 +79,13 @@ h2{
 .carousel-item{
   text-align: center;
   align-content: center;
+}
+
+/* GOOGLE MAPS */
+
+.find{
+  background-color: #00adb5;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
