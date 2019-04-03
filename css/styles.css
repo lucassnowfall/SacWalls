@@ -1,0 +1,70 @@
+/* #Fonts googleapis
+font-family: 'Pacifico', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Roboto', sans-serif; */
+body {
+  margin: 0;
+}
+
+/* NAVBAR */
+.navbar-brand{
+  padding: 0 5%;
+  font-size: 1.6rem;
+  font-family: 'Pacifico';
+}
+
+.navbar-nav{
+  padding: 0 5%;
+}
+
+.nav-item{
+  padding: 0 3%;
+  font-size: 1.2rem;
+}
+
+/* VIDEO HEADING */
+
+#myVideo{
+  width: 100%;
+  z-index: -1;
+}
+.container-fluid{
+  margin: 0;
+  padding: 0;
+  background-color: #343A40;
+}
+
+.headings{
+  z-index: 1;
+  text-align: center;
+  font-size: 3rem;
+  left: 30%;
+  position: absolute;
+  top: 50%;
+}
+
+h1{
+  font-size: 8rem;
+  font-family: 'Pacifico', cursive;
+  color: #ffebb7;
+  line-height: 1.5;
+}
+h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: #fffeec;
+}
+
+.carousel-inner{
+  background-color: #343A40;
+}
+
+.mural-img{
+  height: 600px;
+}
+
+.carousel-item{
+  text-align: center;
+  align-content: center;
+}
