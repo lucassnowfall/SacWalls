@@ -10,15 +10,17 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto|Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto|Sacramento" rel="stylesheet">
 
   <!-- JAVASCRIP -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!-- GOOGLE MAP -->
 
 </head>
 
@@ -36,14 +38,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#videobackground">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Murals</a>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Map</a>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#carousel">Murals</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#find">Map</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
           </li>
         </ul>
       </div>
@@ -51,43 +53,56 @@
   </section>
 
   <!-- VIDEO BACKGROUND -->
-  <div class="container-fluid">
-    <div class="headings">
-      <h1>SacWalls</h1>
-      <h2>Local Street Art</h2>
+  <section class="videobackground">
+    <div class="container-fluid">
+      <div class="headings">
+        <h1>SacWalls</h1>
+        <h2>Local Street Art</h2>
 
-    </div>
-    <video autoplay loop id="myVideo" muted plays-inline>
+      </div>
+      <video autoplay loop id="myVideo" muted plays-inline>
       <source src="video/sac.mp4" type="video/mp4">
-  </div>
-
+    </div>
+  </section>
   <!-- ART CAROUSEL -->
   <section id="carousel">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 
-
-      </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active .carousel-caption ">
           <img class="mural-img" src="images/mural1.jpg" alt="First slide">
+          <h5 class="artist">Artist: <span>@obeygiant</span></h5>
+          <p class="details">📸 @LucasSnowfall</p>
+          <p class="details">Location: 16th & L.</p>
         </div>
         <div class="carousel-item">
           <img class="mural-img" src="images/mural2.jpg" alt="Second slide">
+          <h5 class="artist">Artist: <span>@/lcstudiotutto</span></h5>
+          <p class="details">📸 @LucasSnowfall</p>
+          <p class="details">Location: Bloodsource building at 16th and Q.</p>
         </div>
         <div class="carousel-item">
           <img class="mural-img" src="images/mural3.jpg" alt="Third slide">
+          <h5 class="artist">Artist: <span>@starfightera</span></h5>
+          <p class="details">📸 @LucasSnowfall</p>
+          <p class="details">Location: 7Th & K street.</p>
         </div>
         <div class="carousel-item">
           <img class="mural-img" src="images/mural4.jpg" alt="Fourth slide">
+          <h5 class="artist">Artists: <span>Artists: @nosego</span></h5>
+          <p class="details">📸 @LucasSnowfall</p>
+          <p class="details">Location: L & 17th. </p>
         </div>
         <div class="carousel-item">
           <img class="mural-img" src="images/mural5.jpg" alt="Fifith slide">
+          <h5 class="artist">Artist: <span>@br3ntpatt3n</span></h5>
+          <p class="details">📸 @Wideopenwalls</p>
+        </div>
+        <div class="carousel-item">
+          <img class="mural-img" src="images/mural6.jpg" alt="Sixith slide">
+          <h5 class="artist">Artist: <span>@OKUDART</span></h5>
+          <p class="details">📸 @dressedtomatch</p>
+          <p class="details">Location:Cleat Ln. </p>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -100,15 +115,25 @@
       </a>
     </div>
 
-    </section>
+  </section>
 
   <!-- MAP WITH LOCATION -->
   <section class="find">
-    <!-- #map with pins as location to find the arts. -->
-    <h3>Where to find them:</h3>
-    <!--The div element for the map -->
-    <div id="map">
-      <iframe src="https://fusiontables.googleusercontent.com/embedviz?q=select+col2+from+1HGflVHUPFjr4p25HM3MXwznLqjsHVxSgN6z4Z96X&viz=MAP&h=false&lat=38.56772618269493&lng=-121.47746831494146&t=1&z=12&l=col2&y=2&tmplt=2&hml=GEOCODABLE" width="900" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="container-fluid">
+      <!-- #map with pins as location to find the arts. -->
+      <h3>Sacramento Mural Art</h3>
+      <center>
+        <p class="about">The art painted around Sacramento walls and floor, is part of the festival <em>Wide Open Walls</em>,
+          A local festival, that attract and promote several international and local artists, while turning the
+          city in a open museum. </p>
+        <p class="about">Below you can find the murals.</p>
+        <a class="about" href="https://journalistnate.com/sacramento-mural-map/">Source</a>
+        <!--The div element for the map -->
+        <div>
+          <iframe class="map" src="https://fusiontables.googleusercontent.com/embedviz?q=select+col2+from+1HGflVHUPFjr4p25HM3MXwznLqjsHVxSgN6z4Z96X&viz=MAP&h=false&lat=38.56772618269493&lng=-121.47746831494146&t=1&z=12&l=col2&y=2&tmplt=2&hml=GEOCODABLE" width="900"
+            height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </center>
     </div>
 
 
@@ -116,11 +141,16 @@
 
   <!-- FOOTER -->
   <section id="footer">
-    <!-- #who to support local artist -->
-
-    <!-- #about me
-  #non profit website.
-  #Icones for my instagram
+    <!-- <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWideopenwalls%2F&tabs=timeline&width=340&height=100px&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="200px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    -->
+    <div class="contact">
+      <h6>For Educational Purposes Only</h6>
+      <h6>Website by Lucas Snowfall</h6>
+      <a class="icone fab fa-instagram fa-2x" href="www.instagram.com/LucasSnowfall"></a>
+      <a class="icone fas fa-envelope fa-2x" href="lucasdesouzaofficial@gmail.com"></a>
+      <a class="icone fab fa-facebook fa-2x" href="www.facebook.com/lucassnowfall"></a>
+    </div>
+    <!--#Icones for my instagram
   #Email -->
   </section>
 </body>
